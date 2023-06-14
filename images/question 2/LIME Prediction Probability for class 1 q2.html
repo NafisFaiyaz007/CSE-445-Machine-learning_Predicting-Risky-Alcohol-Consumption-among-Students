@@ -35800,25 +35800,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divGMB1R63HU47QXPA"></div>
+        <div class="lime top_div" id="top_divJ9S85W2DHMKCTA7"></div>
         
         <script>
-        var top_div = d3.select('#top_divGMB1R63HU47QXPA').classed('lime top_div', true);
+        var top_div = d3.select('#top_divJ9S85W2DHMKCTA7').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["low", "high"], [0.491332042805717, 0.5086679571942835]);
+            var pp = new lime.PredictProba(pp_svg, ["low", "high"], [0.431505073624452, 0.5684949263755483]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["low", "high"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["higher_no <= 0.00", -0.1322206425823873], ["schoolsup_yes <= 0.00", 0.10488146378449419], ["failures <= 0.00", -0.07138082520275642], ["paid_yes > 0.00", 0.05104382797934786], ["studytime > 0.33", -0.038943958242268144], ["0.44 < avg_grade <= 0.56", 0.0007809070901163406], ["0.04 < absences <= 0.11", -0.00014197517223423864], ["higher_yes <= 1.00", 0.0], ["schoolsup_no <= 1.00", 0.0], ["paid_no <= 1.00", 0.0]], 1, exp_div);
+                exp.show([["studytime > 0.33", -0.12221912415162835], ["schoolsup_yes <= 0.00", 0.09964479487184401], ["0.44 < avg_grade <= 0.56", 0.06111938483765939], ["failures <= 0.00", -0.05893472553049566], ["paid_yes > 0.00", 0.05441110619359666], ["0.04 < absences <= 0.11", 0.04172260846778698], ["higher_yes <= 1.00", 0.0]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_tabular([["higher_no", "0.00", -0.1322206425823873], ["schoolsup_yes", "0.00", 0.10488146378449419], ["failures", "0.00", -0.07138082520275642], ["paid_yes", "1.00", 0.05104382797934786], ["studytime", "0.67", -0.038943958242268144], ["avg_grade", "0.54", 0.0007809070901163406], ["absences", "0.05", -0.00014197517223423864], ["higher_yes", "1.00", 0.0], ["schoolsup_no", "1.00", 0.0], ["paid_no", "0.00", 0.0]], 1, raw_div);
+            exp.show_raw_tabular([["studytime", "0.67", -0.12221912415162835], ["schoolsup_yes", "0.00", 0.09964479487184401], ["avg_grade", "0.54", 0.06111938483765939], ["failures", "0.00", -0.05893472553049566], ["paid_yes", "1.00", 0.05441110619359666], ["absences", "0.05", 0.04172260846778698], ["higher_yes", "1.00", 0.0]], 1, raw_div);
         
         </script>
         </body></html>
